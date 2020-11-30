@@ -1,0 +1,79 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  line-height: 1.6;
+}
+
+/* Typography */
+
+h1,
+h2,
+strong {
+  font-weight: 700;
+}
+
+.accent-color {
+  color: #ffe600;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: #000;
+  margin-top: 1.25em;
+}
+
+/* buttons */
+
+.btn {
+  padding: .5em 1.75em;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #ffe600;
+  color: #000;
+  justify-self: start;
+}
+
+/* General Layout */
+
+.main-grid {
+  display: grid;
+  grid-template-columns:  minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+/* Hero Styles */
+
+.hero {
+  background-image: url(img/hero-bg.jpg);
+  padding: 4em 0;
+  color: #fff;
+}
+
+.hero > * {
+  grid-column: 2 /-2;
+}
+
+/* Info Styles */
+
+.info {
+  padding: 4em 0;
+  text-align: center;
+}
+
+.col {
+  grid-column: 2 / -2;
+}
